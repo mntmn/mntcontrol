@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>mntcontrol</title>
+    <script src="/js/mntcontrol.js"></script>
+    <link rel="stylesheet" href="/css/style.css"></link>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    {% for light in lights %}
+    <div class="controls">
+      <h1>{{ light.title }}</h1>
+      
+      <button onclick="setLight('{{ light.name }}',255)">On</button>
+      <button onclick="setLight('{{ light.name }}',128)">Dim</button>
+      <button onclick="setLight('{{ light.name }}',0)">Off</button>
+    </div>
+    {% endfor %}
+  </body>
+</html>

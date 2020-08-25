@@ -1,0 +1,9 @@
+bind = "0.0.0.0:8080"
+
+[mqtt]
+host = "192.168.1.1"
+port = 1883
+
+[[lights]]
+name = "0xfeedbee1337"
+title = "Lab Tube 1"
