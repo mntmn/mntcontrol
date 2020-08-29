@@ -21,9 +21,9 @@ a:visited {
 
 button {
     font-size: 1.5rem;
-    margin-right: 10px;
+    margin-right: 5px;
     margin-bottom: 10px;
-    min-width: 100px;
+    min-width: 80px;
     min-height: 50px;
 }
 

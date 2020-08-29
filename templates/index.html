@@ -2,14 +2,14 @@
   <head>
     <title>mntcontrol</title>
     <script src="/js/mntcontrol.js"></script>
-    <link rel="stylesheet" href="/css/style.css"></link>
+    <link rel="stylesheet" href="/css/style.css?v=2"></link>
     <meta name="viewport" content="width=device-width">
   </head>
   <body>
+    <h1>Lab Lights</h1>
     {% for light in lights %}
     <div class="controls">
-      <h1>{{ light.title }}</h1>
-      
+      {{ light.title }}
       <button onclick="setLight('{{ light.name }}',255)">On</button>
       <button onclick="setLight('{{ light.name }}',128)">Dim</button>
       <button onclick="setLight('{{ light.name }}',0)">Off</button>
